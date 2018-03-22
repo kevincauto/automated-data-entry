@@ -66,7 +66,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[1].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[1].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[1].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[1].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -104,7 +104,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[2].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[2].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[2].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[2].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -142,7 +142,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[3].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[3].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[3].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[3].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -180,7 +180,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[4].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[4].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[4].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[4].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -218,7 +218,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[5].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[5].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[5].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[5].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -256,7 +256,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[6].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[6].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[6].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[6].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -294,7 +294,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[7].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[7].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[7].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[7].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -332,7 +332,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[8].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[8].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[8].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[8].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -370,7 +370,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[9].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[9].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[9].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[9].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -408,7 +408,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[10].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[10].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[10].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[10].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -446,7 +446,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[11].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[11].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[11].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[11].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -484,7 +484,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[12].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[12].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[12].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[12].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -522,7 +522,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[13].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[13].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[13].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[13].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -560,7 +560,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[14].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[14].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[14].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[14].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -598,7 +598,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[15].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[15].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[15].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[15].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -636,7 +636,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[16].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[16].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[16].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[16].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -674,7 +674,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(5) > td:nth-child(2) > input[type="text"]', channels[17].header)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(7) > td:nth-child(2) > input[type="text"]', channels[17].link1)
     .type('#editForm > table > tbody:nth-child(4) > tr:nth-child(8) > td:nth-child(2) > input[type="text"]', channels[17].headerLink)
-    .type('#imageValue', channels[0].img)
+    .type('#imageValue', channels[17].img)
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
@@ -715,5 +715,18 @@ app.post('/api/data-entry', (req, res) => {
   res.send({ express: 'Hello From Express' });
 
 });
+
+if (process.env.NODE_ENV === 'production') {
+  //Express will serve up production assets
+  //like our main.js file, or main.css file!
+  app.use(express.static('client/build'));
+
+  //Express will sever up the index.html file
+  //if it doesn't recognize the route
+  const path = require('path');
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
