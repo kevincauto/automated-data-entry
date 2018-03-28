@@ -5,10 +5,10 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json());
 
 const Nightmare = require('nightmare')
-const nightmare = Nightmare({ show: true, typeInterval: 100 })
+const nightmare = Nightmare({ show: true, typeInterval: 10 })
 
 
-// .click('#saveForm') replace by .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+// .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/') replace by .click('#saveForm')
 app.post('/api/data-entry', (req, res) => {
   const { startDate, endDate, userName, password, channels } = req.body;
 
@@ -33,7 +33,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -44,7 +44,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -55,7 +55,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
     //Channel 2
     //Feature Article
@@ -71,7 +71,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -82,7 +82,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -93,7 +93,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -109,7 +109,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -120,7 +120,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -131,7 +131,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -147,7 +147,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -158,7 +158,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -169,7 +169,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -185,7 +185,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -196,7 +196,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -207,7 +207,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -223,7 +223,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -234,7 +234,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -245,7 +245,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -261,7 +261,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -272,7 +272,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -283,7 +283,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -299,7 +299,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -310,7 +310,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -321,7 +321,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -337,7 +337,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -348,7 +348,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -359,7 +359,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -375,7 +375,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -386,7 +386,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -397,7 +397,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -413,7 +413,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -424,7 +424,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -435,7 +435,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -451,7 +451,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -462,7 +462,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -473,7 +473,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -489,7 +489,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -500,7 +500,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -511,7 +511,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -527,7 +527,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -538,7 +538,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -549,7 +549,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -565,7 +565,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -576,7 +576,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -587,7 +587,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -603,7 +603,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -614,7 +614,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -625,7 +625,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -641,7 +641,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -652,7 +652,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -663,7 +663,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Feature Article
@@ -679,7 +679,7 @@ app.post('/api/data-entry', (req, res) => {
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
     .click('#is_sticky')
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -690,7 +690,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
 
     //Non-Sticky Entry
@@ -701,7 +701,7 @@ app.post('/api/data-entry', (req, res) => {
     .click('#editForm > table > tbody:nth-child(4) > tr:nth-child(9) > td:nth-child(2) > input[type="checkbox"]')
     .type('#datefield-1020-inputEl', startDate)
     .type('#datefield-1021-inputEl', endDate)
-    .goto('https://www.aegisdentalnetwork.com/admin/entries/page/4/')
+    .click('#saveForm')
     .wait(5000)
     .end()
     .then(function (result) {
